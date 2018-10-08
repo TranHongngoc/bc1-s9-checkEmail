@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Email</title>
+</head>
+<body>
+<script>
+
+    function checkEmail(str) {
+        var regexp = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    var email = 'aasd13@gmail.com';
+    console.log(checkEmail(email));
+    var email = 'ngoc@ngoc.vn';
+    console.log(checkEmail(email));
+
+</script>
+</body>
+</html>
